@@ -19,27 +19,6 @@
 #define _Q_Mouse  &lt MOUSE Q
 
 / {
-        macros {
-                lmenu: lmenu {
-                    label = "mac_lmenu";
-                    compatible = "zmk,behavior-macro";
-                    bindings
-                        = <&macro_press &kp LCTL>
-                        , <&macro_tap &kp F2>
-                        , <&macro_release &kp LCTL>
-                        ; 
-                };
-                rmenu: rmenu {
-                    label = "mac_rmenu";
-                    compatible = "zmk,behavior-macro";
-                    bindings
-                        = <&macro_press &kp LCTL>
-                        , <&macro_tap &kp F8>
-                        , <&macro_release &kp LCTL>
-                        ;
-                };
-        };
-
         keymap {
                 compatible = "zmk,keymap";
 
@@ -50,13 +29,13 @@
    CAP_Symb_ &kp A     &kp S     _D_Numb_  &kp F     &kp G       &kp H     &kp J     &kp K     &kp L     &kp SEMI  _Qu_Symb
    &kp LSHFT _Z_LCtl_  _X_LAlt_  &kp C     &kp V     &kp B       &kp N     &kp M     &kp COMMA Dot_RAlt  Slsh_Ctl  &kp RSHFT
 /*                               --------- --------- --------- | --------- --------- ---------                               */
-                                 &none     &kp ENT   _Tab_Cmd    Bspc_Cmd  &kp SPC   &kp ESC
+                                 &trans    &kp ENTER _Tab_Cmd    Bspc_Cmd  &kp SPACE &kp ESC
                         >;
                 };
                 symbol_layer {
                         bindings = <
 /* --------- --------- --------- --------- --------- --------- | --------- --------- --------- --------- --------- --------- */
-   &trans    &kp EXCL  &kp TILDE &kp LBRC  &kp RBRC  &kp AMPS    &lmenu    &trans    &trans    &rmenu    &kp PG_UP &trans
+   &trans    &kp EXCL  &kp TILDE &kp LBRC  &kp RBRC  &kp AMPS    &kp LC(F2) &trans   &trans    LC(F8)    &kp PG_UP &trans
    &trans    &kp HASH  &kp GRAVE &kp LPAR  &kp RPAR  &kp DLLR    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
    &trans    &kp PRCNT &kp CARET &kp LBKT  &kp RBKT  &kp AT      &kp DEL   &kp END   &kp HOME  &kp INS   &kp PG_DN &trans
 /*                               --------- --------- --------- | --------- --------- ---------                               */
