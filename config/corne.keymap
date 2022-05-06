@@ -28,7 +28,7 @@
                         , <&macro_tap &kp F2>
                         , <&macro_release &kp LCTL>
                         ; 
-                }
+                };
                 rmenu: rmenu {
                     label = "mac_rmenu";
                     compatible = "zmk,behavior-macro";
@@ -37,8 +37,8 @@
                         , <&macro_tap &kp F8>
                         , <&macro_release &kp LCTL>
                         ;
-                }
-        }
+                };
+        };
 
         keymap {
                 compatible = "zmk,keymap";
