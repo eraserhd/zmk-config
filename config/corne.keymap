@@ -35,7 +35,7 @@
                 symbol_layer {
                         bindings = <
 /* --------- --------- --------- --------- --------- --------- | --------- --------- --------- --------- --------- --------- */
-   &trans    &kp EXCL  &kp TILDE &kp LBRC  &kp RBRC  &kp AMPS    &kp LC(F2) &trans   &trans    LC(F8)    &kp PG_UP &trans
+   &trans    &kp EXCL  &kp TILDE &kp LBRC  &kp RBRC  &kp AMPS    &kp LC(F2) &trans   &trans   &kp LC(F8) &kp PG_UP &trans
    &trans    &kp HASH  &kp GRAVE &kp LPAR  &kp RPAR  &kp DLLR    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
    &trans    &kp PRCNT &kp CARET &kp LBKT  &kp RBKT  &kp AT      &kp DEL   &kp END   &kp HOME  &kp INS   &kp PG_DN &trans
 /*                               --------- --------- --------- | --------- --------- ---------                               */
