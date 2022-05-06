@@ -12,10 +12,10 @@
 #define _Z_LCtl_  &mt LCTL Z
 #define _X_LAlt_  &mt LALT X
 #define _Tab_Cmd  &mt LGUI TAB
-#define _Qu_Symb  &lt SYMBOL SQT
+#define _Qu_Symb  &lt SYMBOL SINGLE_QUOTE
 #define Dot_RAlt  &mt RALT DOT
-#define Slsh_Ctl  &mt RCTL FSLH
-#define Bspc_Cmd  &mt RGUI BKSP
+#define Slsh_Ctl  &mt RCTL SLASH
+#define Bspc_Cmd  &mt RGUI BACKSPACE
 #define _Q_Mouse  &lt MOUSE Q
 
 / {
