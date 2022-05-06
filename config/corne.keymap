@@ -14,28 +14,39 @@
 
                 default_layer {
                         bindings = <
-   &kp MINUS &kp Q     &kp W     &kp E     &kp R    &kp T        &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp CAPS  &kp A     &kp S     &kp D     &kp F    &kp G        &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z     &kp X     &kp C     &kp V    &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                  &none    &kp ENT &kp LGUI    &kp RGUI &kp SPC &kp ESC
+/* --------- --------- --------- --------- --------- --------- | --------- --------- --------- --------- --------- --------- */
+   &kp MINUS &kp Q     &kp W     &kp E     &kp R     &kp T       &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSLH
+   &kp CAPS  &kp A     &kp S     &kp D     &kp F     &kp G       &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT
+   &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B       &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
+/*                               --------- --------- --------- | --------- --------- ---------                               */
+                                 &none     &kp ENT   &kp LGUI    &kp RGUI  &kp SPC   &kp ESC
                         >;
                 };
                 symbol_layer {
                         bindings = <
-   &trans    &kp EXCL  &kp TILDE &kp LBRC  &kp RBRC &kp AMPS     &kp N6   &trans   &trans   &kp N9    &kp PG_UP &trans
-   &trans    &kp HASH  &kp GRAVE &kp LPAR  &kp RPAR &kp DLLR     &kp LEFT &kp DOWN &kp UP   &kp RIGHT &trans    &trans
-   &trans    &kp PRCNT &kp CARET &kp LBKT  &kp RBKT &kp AT       &kp DEL  &kp END  &kp HOME &kp INS   &kp PG_DN &trans
-                                    &trans   &none   &trans   &trans   &trans   &trans
+/* --------- --------- --------- --------- --------- --------- | --------- --------- --------- --------- --------- --------- */
+   &trans    &kp EXCL  &kp TILDE &kp LBRC  &kp RBRC  &kp AMPS    &kp N6    &trans    &trans    &kp N9    &kp PG_UP &trans
+   &trans    &kp HASH  &kp GRAVE &kp LPAR  &kp RPAR  &kp DLLR    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
+   &trans    &kp PRCNT &kp CARET &kp LBKT  &kp RBKT  &kp AT      &kp DEL   &kp END   &kp HOME  &kp INS   &kp PG_DN &trans
+/*                               --------- --------- --------- | --------- --------- ---------                               */
+                                 &trans    &none     &trans      &trans    &trans    &trans
                         >;
                 };
-                /* mouse_layer { } */
                 number_layer {
                         bindings = <
-   &trans     &trans  &trans &kp E    &trans  &trans       &kp MINUS &kp N7   &kp N8   &kp N9   &kp STAR  &trans
-   &trans     &kp A   &trans &kp D    &kp F   &trans       &kp PLUS  &kp N4   &kp N5   &kp N6   &kp DOT   &trans
-   &trans     &trans  &trans &kp C    &trans   &kp B       &kp EQUAL &kp N1   &kp N2   &kp N3   &kp SLASH &trans
-                             &trans   &trans   &trans     &trans   &trans   &kp N0
+/* --------- --------- --------- --------- --------- --------- | --------- --------- --------- --------- --------- --------- */
+   &trans    &trans    &trans    &kp E     &trans    &trans      &kp MINUS &kp N7    &kp N8    &kp N9    &kp STAR  &trans
+   &trans    &kp A     &trans    &kp D     &kp F     &trans      &kp PLUS  &kp N4    &kp N5    &kp N6    &kp DOT   &trans
+   &trans    &trans    &trans    &kp C     &trans    &kp B       &kp EQUAL &kp N1    &kp N2    &kp N3    &kp SLASH &trans
+/*                               --------- --------- --------- | --------- --------- ---------                               */
+                                 &trans    &trans    &trans      &trans    &trans    &kp N0
                         >;
                 };
         };
 };
+
+/*
+  LGUI/TAB
+  RGUI/BKSPAC
+
+*/
