@@ -18,6 +18,10 @@
                 };
         };
 
+        &mt {
+                flavor = "tap-preferred";
+        };
+
 #define CAP_Symb_ &lt SYMBOL &denerfed_caps_lock
 #define _D_Numb_  &lt NUMBER D
 #define _Z_LCtl_  &mt LCTL Z
