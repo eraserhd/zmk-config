@@ -7,6 +7,17 @@
 #define MOUSE   2
 #define NUMBER  3
 
+/ {
+        macros {
+                denerfed_caps_lock: denerfed_caps_lock {
+                        label = "denerfed_caps_lock";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        wait-ms = <50>;
+                        bindings = <&macro_press &kp CAPS>, <&macro_release &kp CAPS>;
+                };
+        };
+
 #define CAP_Symb_ &lt SYMBOL &denerfed_caps_lock
 #define _D_Numb_  &lt NUMBER D
 #define _Z_LCtl_  &mt LCTL Z
@@ -18,16 +29,6 @@
 #define Bspc_Cmd  &mt RGUI BACKSPACE
 #define _Q_Mouse  &lt MOUSE Q
 
-/ {
-        macros {
-                denerfed_caps_lock: denerfed_caps_lock {
-                        label = "denerfed_caps_lock";
-                        compatible = "zmk,behavior-macro";
-                        #binding-cells = <0>;
-                        wait-ms = <50>;
-                        bindings = <&macro_press &kp CAPS>, <&macro_release &kp CAPS>;
-                }
-        }
         keymap {
                 compatible = "zmk,keymap";
 
