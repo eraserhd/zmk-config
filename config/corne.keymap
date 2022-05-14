@@ -7,6 +7,10 @@
 #define MOUSE   2
 #define NUMBER  3
 
+&mt {
+        flavor = "tap-preferred";
+};
+
 / {
         macros {
                 denerfed_caps_lock: denerfed_caps_lock {
@@ -16,10 +20,6 @@
                         wait-ms = <50>;
                         bindings = <&macro_press &kp CAPS>, <&macro_release &kp CAPS>;
                 };
-        };
-
-        &mt {
-                flavor = "tap-preferred";
         };
 
 #define CAP_Symb_ &lt SYMBOL &denerfed_caps_lock
