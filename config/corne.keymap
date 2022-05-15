@@ -24,14 +24,15 @@
 
         behaviors {
                 CAP_Symb: CAP_Symb {
-                        label = "CAP_Symb";
+                        label = "ZM_CAP_Symb";
                         compatible = "zmk,behavior-hold-tap";
-                        #binding-cells = <3>;
+                        #binding-cells = <2>;
                         flavor = "hold-preferred";
-                        bindings = <&lt SYMBOL>, <&denerfed_caps_lock>;
+                        bindings = <&mo>, <>;
                 };
         };
 
+#define CAP_Symb  &CAP_Symb SYMBOL &denerfed_caps_lock
 #define _D_Numb_  &lt NUMBER D
 #define _Z_LCtl_  &mt LCTL Z
 #define _X_LAlt_  &mt LALT X
