@@ -8,31 +8,12 @@
 #define NUMBER  3
 
 &mt {
-        flavor = "tap-preferred";
+        flavor = "balanced";
 };
 
 / {
-        macros {
-                denerfed_caps_lock: denerfed_caps_lock {
-                        label = "denerfed_caps_lock";
-                        compatible = "zmk,behavior-macro";
-                        #binding-cells = <0>;
-                        wait-ms = <50>;
-                        bindings = <&macro_press &kp CAPS>, <&macro_release &kp CAPS>;
-                };
-        };
 
-        behaviors {
-                CAP_Symb: CAP_Symb {
-                        label = "ZM_CAP_Symb";
-                        compatible = "zmk,behavior-hold-tap";
-                        #binding-cells = <2>;
-                        flavor = "hold-preferred";
-                        bindings = <&mo>, <>;
-                };
-        };
-
-#define CAP_Symb  &CAP_Symb SYMBOL &denerfed_caps_lock
+#define CAP_Symb  &lt SYMBOL CAPS
 #define _D_Numb_  &lt NUMBER D
 #define _Z_LCtl_  &mt LCTL Z
 #define _X_LAlt_  &mt LALT X
@@ -45,7 +26,6 @@
 
         keymap {
                 compatible = "zmk,keymap";
-
                 default_layer {
                         bindings = <
 /* --------- --------- --------- --------- --------- --------- | --------- --------- --------- --------- --------- --------- */
