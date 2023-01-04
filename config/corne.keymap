@@ -21,7 +21,7 @@
 #define _Qu_Symb  &lt SYMBOL SINGLE_QUOTE
 #define Dot_RAlt  &mt RALT DOT
 #define Slsh_Ctl  &mt RCTL SLASH
-#define Bspc_Cmd  &mt RGUI BACKSPACE
+#define Bspc_Cmd  &mqt RGUI BACKSPACE
 #define _Q_Mouse  &lt MOUSE Q
 
         behaviors {
@@ -32,6 +32,16 @@
                 flavor = "balanced";
                 tapping-term-ms = <200>;
                 bindings = <&mo>, <&caps_word>;
+            };
+
+            mqt: mod_quick_tap {
+                compatible = "zmk,behavior-hold-tap";
+                label = "ZM_qt_mt";
+                #binding-cells = <2>;
+                flavor = "balanced";
+                tapping-term-ms = <200>;
+                quick-tap-ms = <125>;
+                bindings = <&kp>, <&kp>;
             };
         };
 
