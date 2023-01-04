@@ -12,11 +12,6 @@
         flavor = "balanced";
 };
 
-/ {
-    //chosen {
-    //    zmk,matrix_transform = &custom_transform;
-    //};
-
     &default_transform {
         compatible = "zmk,matrix-transform";
         columns = <12>;
@@ -33,6 +28,12 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)      RC(2,6) RC(2,7) RC(2,8) RC(
                           RC(3,0) RC(3,1)
 	>;
     };
+
+/ {
+    //chosen {
+    //    zmk,matrix_transform = &custom_transform;
+    //};
+
 
 #define CAP_Symb  &caps_word_layer SYMBOL 0
 #define _D_Numb_  &lt NUMBER D
