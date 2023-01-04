@@ -13,7 +13,7 @@
 
 / {
 
-#define CAP_Symb  &lt SYMBOL CAPS
+#define CAP_Symb  &lt SYMBOL &caps_word
 #define _D_Numb_  &lt NUMBER D
 #define _Z_LCtl_  &mt LCTL Z
 #define _X_LAlt_  &mt LALT X
