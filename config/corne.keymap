@@ -13,7 +13,7 @@
 
 / {
 
-#define CAP_Symb  &lt SYMBOL &caps_word
+#define CAP_Symb  &caps_word_layer SYMBOL &none
 #define _D_Numb_  &lt NUMBER D
 #define _Z_LCtl_  &mt LCTL Z
 #define _X_LAlt_  &mt LALT X
@@ -23,6 +23,16 @@
 #define Slsh_Ctl  &mt RCTL SLASH
 #define Bspc_Cmd  &mt RGUI BACKSPACE
 #define _Q_Mouse  &lt MOUSE Q
+
+        behaviors {
+            caps_word_layer: caps_word_layer {
+                compatible = "zmk,behavior-hold-tap";
+                label = "CAP_Symb";
+                #binding-cells = <2>;
+                flavor = "balanced";
+                bindings = <&mo>, <&caps_word>;
+            };
+        };
 
         keymap {
                 compatible = "zmk,keymap";
