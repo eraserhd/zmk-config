@@ -68,8 +68,8 @@
    CAP_Symb  &kp A     &kp S     _D_Numb_  &kp F     &kp G       &kp H     &kp J     &kp K     &kp L     &kp SEMI  _Qu_Symb
    &kp LSHFT _Z_LCtl_  _X_LAlt_  &kp C     &kp V     &kp B       &kp N     &kp M     &kp COMMA Dot_RAlt  Slsh_Ctl  &kp RSHFT
 /*			       --------- --------- --------- | --------- --------- ---------			       */
-			   &trans   &kp ENTER  _Tab_Cmd  &kp ESC   Bspc_Cmd  &kp SPACE &kp ESC
-				      &kp F11   &kp N9
+			 &trans &kp ENTER  _Tab_Cmd  &kp F18   Bspc_Cmd  &kp SPACE &kp ESC
+				      &kp F19   &kp F20
 			>;
 		};
 		symbol_layer {
